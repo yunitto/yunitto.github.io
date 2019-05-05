@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
+  url: 'https://yunitto.github.io',
+  title: 'Yunitto\'s blog',
+  subtitle: '',
+  copyright: '© 2019. All rights reserved.',
+  disqusShortname: 'https-yunitto-github-io',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-139593490-1',
   menu: [
     {
       label: 'Articles',
@@ -23,16 +23,12 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Yunitto',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Software Engineer',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'hyesooyoo.kr@gmail.com',
+      github: 'yunitto',
     }
   }
 };
