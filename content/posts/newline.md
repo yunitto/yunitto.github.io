@@ -22,14 +22,12 @@ Newline/EOL/Line Feed/Line Break은 모두 같은 말이다. line의 끝과 새 
 ## 라인과 파일 끝에 Newline character을 넣어야 하는 이유
 라인과 파일 끝을 제대로 인식하기 위해서다. POSIX에서는 Line을 다음과 같이 [정의한다.](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap03.html#tag_03_206)
 
-```
-A sequence of zero or more non- <newline> characters plus a terminating <newline> character.
-```
+> A sequence of zero or more non- <newline> characters plus a terminating <newline> character.
 
 git을 사용할 때 파일 끝에 newline을 추가해주지 않으면 git diff시 `\ No newline at end of file` 문구가 뜬다. 이걸 무시하고 커밋하면 git이 파일의 마지막 줄을 인식하지 못했기 때문에, 이후 같은 파일을 수정할 때 기존의 마지막 줄이 git diff에 포함된다. (꽤 성가시다!)
 
 유닉스 계열에서 줄 수를 셀 때도 new line이 없으면 마지막 줄을 인식하지 못한다.
-```
+```bash
 $ echo "hello" > text.txt
 $ xxd text.txt
 00000000: 6865 6c6c 6f0a                           hello
