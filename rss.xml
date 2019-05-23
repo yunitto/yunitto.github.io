@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yunitto's blog]]></title><description><![CDATA[Yunitto's blog]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 05:17:42 GMT</lastBuildDate><item><title><![CDATA[Newline Character]]></title><description><![CDATA[Newline? EOL? Line Feed? Line Break?]]></description><link>https://yunitto.github.io/posts/newline/</link><guid isPermaLink="false">https://yunitto.github.io/posts/newline/</guid><pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;newline-eolend-of-line-line-feed-line-break&quot;&gt;&lt;a href=&quot;#newline-eolend-of-line-line-feed-line-break&quot; aria-label=&quot;newline eolend of line line feed line break permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Newline, EOL(End-Of-Line), Line Feed, Line Break&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yunitto's blog]]></title><description><![CDATA[Yunitto's blog]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 23 May 2019 11:17:26 GMT</lastBuildDate><item><title><![CDATA[스파크 완벽 가이드]]></title><description><![CDATA[<스파크 완벽 가이드: 스파크를 확용한 빅데이터 처리와 분석의 모든 것>]]></description><link>https://yunitto.github.io/posts/spark-the-definite-guide/</link><guid isPermaLink="false">https://yunitto.github.io/posts/spark-the-definite-guide/</guid><pubDate>Thu, 23 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;한빛 미디어의 &lt;a href=&quot;https://book.naver.com/bookdb/book_detail.nhn?bid=14300380&quot;&gt;&amp;#x3C;스파크 완벽 가이드: 스파크를 확용한 빅데이터 처리와 분석의 모든 것&gt;&lt;/a&gt;을 공부하며 정리한 내용입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;spark-application은-driver-process와-executor-process-로-구성&quot;&gt;&lt;a href=&quot;#spark-application%EC%9D%80-driver-process%EC%99%80-executor-process-%EB%A1%9C-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;spark application은 driver process와 executor process 로 구성 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark Application은 &lt;strong&gt;driver process&lt;/strong&gt;와 &lt;strong&gt;executor process&lt;/strong&gt; 로 구성.&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;driver process&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;main()&lt;/code&gt; 함수 실행&lt;/li&gt;
+&lt;li&gt;Application 정보 관리, exceutor process 관리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;executor process&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;driver가 할당한 코드 실행, 다시 보고. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JVM 위의 SparkSession 객체가 진입점이 된다.&lt;/li&gt;
+&lt;li&gt;Spark API 는 크게 두가지 - structured, unstructured&lt;/li&gt;
+&lt;li&gt;하나의 SparkSession은 하나의 SparkApplication에 대응한다. 즉, 앱 하나당 하나의 드라이버 프로세스가 존재.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;scala&quot;&gt;&lt;pre class=&quot;language-scala&quot;&gt;&lt;code class=&quot;language-scala&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// def range(end: Long): org.apache.spark.sql.Dataset[Long]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// def toDF(colNames: String*): DataFrame&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; spark &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; SparkSession&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;builder&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getOrCreate&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; myRange &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; spark&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;range&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;toDF&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Number&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;클러스터 모드의 경우, 숫자의 범위가 나뉘어서 서로 다른 여러 익스큐터에 할당된다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;dataframe&quot;&gt;&lt;a href=&quot;#dataframe&quot; aria-label=&quot;dataframe permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dataframe&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Structured API&lt;/li&gt;
+&lt;li&gt;데이터를 테이블 형식(Row,Column)으로 표시&lt;/li&gt;
+&lt;li&gt;Row 단위로 분산&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;partition&quot;&gt;&lt;a href=&quot;#partition&quot; aria-label=&quot;partition permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Partition&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터의 분할 단위 == 클러스터의 물리적 머신에 존재하는 Row의 집합 &lt;/li&gt;
+&lt;li&gt;Dataframe의 파티션은 실행 중에 데이터가 물리적으로 분산되는 방식&lt;/li&gt;
+&lt;li&gt;병렬성은 파티션 수와 익스큐터 수에 의해 결정.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;spark-operations-transformation-and-action&quot;&gt;&lt;a href=&quot;#spark-operations-transformation-and-action&quot; aria-label=&quot;spark operations transformation and action permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark Operations: Transformation and Action&lt;/h2&gt;
+&lt;h3 id=&quot;1-transformation&quot;&gt;&lt;a href=&quot;#1-transformation&quot; aria-label=&quot;1 transformation permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Transformation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;데이터가 immutable 하기 때문에 변경 방법을 계획해두는 것.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;scala&quot;&gt;&lt;pre class=&quot;language-scala&quot;&gt;&lt;code class=&quot;language-scala&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// def where(conditionExpr: String): Dataset[Row]&lt;/span&gt;
+scala&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; myRange&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;where&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;number % 2 == 0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// DF에서 짝수만 찾기&lt;/span&gt;
+res0&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; org&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;apache&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;spark&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Dataset&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;org&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;apache&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;spark&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Row&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;number&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; bigint&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Transformation은 추상적인 변경방법이기 때문에 바로 결과가 나오지 않고, Action을 통해 실행해야한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;dependency-narrow-vs-wide&quot;&gt;&lt;a href=&quot;#dependency-narrow-vs-wide&quot; aria-label=&quot;dependency narrow vs wide permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependency: Narrow vs. Wide&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Narrow Dependency: 1개의 인풋 파티션 1 -&gt; 1개의 아웃풋 파티션&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;where&lt;/code&gt; : 각 인풋 파티션에서 where()을 하여 아웃풋 파티션이 됨.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;메모리&lt;/strong&gt;에서만 실행. 파이프라이닝 수행.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wide Dependency: 1개의 인풋 파티션 -&gt; n개의 아웃풋 파티션&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;shuffle&lt;/code&gt;: 각 인풋 파티션의 데이터가 여러 아웃풋 파티션으로 분산됨.&lt;/li&gt;
+&lt;li&gt;셔플의 결과를 &lt;strong&gt;디스크&lt;/strong&gt;에 저장.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;lazy-evaluation지연-연산&quot;&gt;&lt;a href=&quot;#lazy-evaluation%EC%A7%80%EC%97%B0-%EC%97%B0%EC%82%B0&quot; aria-label=&quot;lazy evaluation지연 연산 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lazy Evaluation(지연 연산)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Transformation의 실행 계획 생성, 마지막 순간에 컴파일 —&gt; &lt;strong&gt;전체 데이터 흐름 최적화&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;predicate-pushdown&quot;&gt;&lt;a href=&quot;#predicate-pushdown&quot; aria-label=&quot;predicate pushdown permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Predicate Pushdown&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Predicate: boolean(True or False)을 리턴하는 쿼리 조건. SQL의 경우 WHERE clause.&lt;/li&gt;
+&lt;li&gt;필터링을 데이터베이스로 위임하는 쿼리 최적화 기법. 데이터베이스 레벨에서 필터링을 하여 가져오는 레코드 수를 줄이면 처리비용과 시간을 최소화하여 쿼리 성능을 향상시킨다.&lt;/li&gt;
+&lt;li&gt;더 볼것. &lt;a href=&quot;https://docs.datastax.com/en/dse/6.0/dse-dev/datastax_enterprise/spark/sparkPredicatePushdown.html&quot;&gt;https://docs.datastax.com/en/dse/6.0/dse-dev/datastax_enterprise/spark/sparkPredicatePushdown.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Newline Character]]></title><description><![CDATA[Newline? EOL? Line Feed? Line Break?]]></description><link>https://yunitto.github.io/posts/newline/</link><guid isPermaLink="false">https://yunitto.github.io/posts/newline/</guid><pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;newline-eolend-of-line-line-feed-line-break&quot;&gt;&lt;a href=&quot;#newline-eolend-of-line-line-feed-line-break&quot; aria-label=&quot;newline eolend of line line feed line break permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Newline, EOL(End-Of-Line), Line Feed, Line Break&lt;/h2&gt;
 &lt;p&gt;Newline/EOL/Line Feed/Line Break은 모두 같은 말이다. line의 끝과 새 line의 시작을 나타내는데, OS마다 다른 캐릭터를 쓴다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;\n (ASCII 0x0A)&lt;/code&gt; Line Feed(LF) - Unix and Unix-like systems(Linux, macOS, FreeBSD)&lt;/li&gt;
@@ -8,18 +84,20 @@
 &lt;p&gt;이처럼 Newline 캐릭터가 여러 종류가 있으니 텍스트 데이터를 정제할 때 빼먹지 말고 꼼꼼히 처리해주어야한다.&lt;/p&gt;
 &lt;h2 id=&quot;라인과-파일-끝에-newline-character을-넣어야-하는-이유&quot;&gt;&lt;a href=&quot;#%EB%9D%BC%EC%9D%B8%EA%B3%BC-%ED%8C%8C%EC%9D%BC-%EB%81%9D%EC%97%90-newline-character%EC%9D%84-%EB%84%A3%EC%96%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0&quot; aria-label=&quot;라인과 파일 끝에 newline character을 넣어야 하는 이유 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;라인과 파일 끝에 Newline character을 넣어야 하는 이유&lt;/h2&gt;
 &lt;p&gt;라인과 파일 끝을 제대로 인식하기 위해서다. POSIX에서는 Line을 다음과 같이 &lt;a href=&quot;http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap03.html#tag_03_206&quot;&gt;정의한다.&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;A sequence of zero or more non- &amp;lt;newline&amp;gt; characters plus a terminating &amp;lt;newline&amp;gt; character.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A sequence of zero or more non- &lt;newline&gt; characters plus a terminating &lt;newline&gt; character.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;git을 사용할 때 파일 끝에 newline을 추가해주지 않으면 git diff시 &lt;code class=&quot;language-text&quot;&gt;\ No newline at end of file&lt;/code&gt; 문구가 뜬다. 이걸 무시하고 커밋하면 git이 파일의 마지막 줄을 인식하지 못했기 때문에, 이후 같은 파일을 수정할 때 기존의 마지막 줄이 git diff에 포함된다. (꽤 성가시다!)&lt;/p&gt;
 &lt;p&gt;유닉스 계열에서 줄 수를 셀 때도 new line이 없으면 마지막 줄을 인식하지 못한다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ echo &amp;quot;hello&amp;quot; &amp;gt; text.txt
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; text.txt
 $ xxd text.txt
 00000000: 6865 6c6c 6f0a                           hello
-$ wc -l text.txt
+$ &lt;span class=&quot;token function&quot;&gt;wc&lt;/span&gt; -l text.txt
        1 text.txt
 
-# -n option: Do not output the trailing newline.
-$ echo -n &amp;quot;hello&amp;quot; &amp;gt; text.txt 
+&lt;span class=&quot;token comment&quot;&gt;# -n option: Do not output the trailing newline.&lt;/span&gt;
+$ &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; -n &lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; text.txt 
 $ xxd text.txt
 00000000: 6865 6c6c 6f                             hello
-$ wc -l text.txt
+$ &lt;span class=&quot;token function&quot;&gt;wc&lt;/span&gt; -l text.txt
        0 text.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
