@@ -71,3 +71,10 @@ res0: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [number: bigint]
 - 필터링을 데이터베이스로 위임하는 쿼리 최적화 기법. 데이터베이스 레벨에서 필터링을 하여 가져오는 레코드 수를 줄이면 처리비용과 시간을 최소화하여 쿼리 성능을 향상시킨다.
 - 더 볼것. https://docs.datastax.com/en/dse/6.0/dse-dev/datastax_enterprise/spark/sparkPredicatePushdown.html
 
+### 2. Action
+- Transformation이 논리적 실행 계획이라면 Action은 실제 계산을 수행.
+- Action을 지정하면 **스파크 잡**이 시작된다.
+```scala
+scala> res0.count
+res1: Long = 50
+```
