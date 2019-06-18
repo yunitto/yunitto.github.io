@@ -4,8 +4,8 @@
   "description": "",
   "main": "n/a",
   "scripts": {
-    "develop": "yarn run clean && gatsby develop",
-    "build": "yarn run clean && gatsby build",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "clean": "rimraf .cache public",
     "flow": "flow",
