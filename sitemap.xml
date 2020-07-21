@@ -7,7 +7,9 @@
 <url> <loc>https://yunitto.github.io/posts/newline/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/posts/spark-the-definite-guide/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/posts/vortex-race3-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yunitto.github.io/posts/loveOOO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/tag/unix</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yunitto.github.io/tag/essay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/tag/keyboard</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/tag/newline</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/tag/scala</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,5 +20,6 @@
 <url> <loc>https://yunitto.github.io/category/spark</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/category/unix</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/category/review</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yunitto.github.io/category/thougts</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yunitto.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
