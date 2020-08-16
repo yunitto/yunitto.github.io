@@ -7,7 +7,7 @@ slug: "/posts/loveOOO/"
 category: "thougts"
 tags:
 - "essay"
-description: ""
+description: "세비야행 비행기에서 만난 할머니"
 ---
 유럽 배낭여행 중의 일이다. 첫 여행지였던 영국 런던을 떠나 스페인 세비야로 가는 길이었다. 동행과 일정상 며칠 떨어져 처음으로 홀로 다니게 된 나는 겉으로 긴장한 티를 내지 않기 위해 두배로 신경을 곤두세운 상태였다.
 

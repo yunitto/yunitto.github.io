@@ -6,7 +6,7 @@ module.exports = {
   subtitle: '',
   copyright: '© 2019. All rights reserved.',
   disqusShortname: 'https-yunitto-github-io',
-  postsPerPage: 4,
+  postsPerPage: 10,
   googleAnalyticsId: 'UA-139593490-1',
   menu: [
     {
